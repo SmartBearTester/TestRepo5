@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="d937a87a-6ce2-430e-970c-3dba57667695" name="TestSuite 1" xmlns:con="http://eviware.com/soapui/config">
+<con:testSuite name="TestSuite 1" id="d937a87a-6ce2-430e-970c-3dba57667695" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d937a87a-6ce2-430e-970c-3dba57667695fileName">TestSuite-1</con:setting>
   </con:settings>

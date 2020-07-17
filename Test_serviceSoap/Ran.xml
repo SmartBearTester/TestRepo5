@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="d58a9563-c422-4686-89a5-e6274d844747" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Ran" name="Ran" bindingOperationName="Ran" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="Ran" isOneWay="false" inputName="" id="d58a9563-c422-4686-89a5-e6274d844747" bindingOperationName="Ran" anonymous="optional" action="http://localhost/test_service/Service1.asmx/Ran" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d58a9563-c422-4686-89a5-e6274d844747fileName">Ran</con:setting>
   </con:settings>
-  <con:call id="fb8e8bd0-ab12-4a7a-919b-086006408170" name="Ran Request">
+  <con:call name="Ran Request" id="fb8e8bd0-ab12-4a7a-919b-086006408170">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -19,6 +19,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Ran"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Ran"/>
   </con:call>
 </con:operation>

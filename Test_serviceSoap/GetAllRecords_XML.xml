@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="b3e65fdb-f679-474c-a4bb-c683c1fc5205" isOneWay="false" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML" name="GetAllRecords_XML" bindingOperationName="GetAllRecords_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="GetAllRecords_XML" isOneWay="false" inputName="" id="b3e65fdb-f679-474c-a4bb-c683c1fc5205" bindingOperationName="GetAllRecords_XML" anonymous="optional" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="b3e65fdb-f679-474c-a4bb-c683c1fc5205fileName">GetAllRecords_XML</con:setting>
   </con:settings>
-  <con:call id="4e461ba5-5c2b-4acc-9f57-8a5d395e71c5" name="GetAllRecords_XML Request">
+  <con:call name="GetAllRecords_XML Request" id="4e461ba5-5c2b-4acc-9f57-8a5d395e71c5">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -17,6 +17,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML"/>
   </con:call>
 </con:operation>

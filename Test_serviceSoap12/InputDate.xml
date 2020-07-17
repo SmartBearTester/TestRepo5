@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="ce3f2670-8971-4cc0-a3b4-d66968afa47c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/InputDate" name="InputDate" bindingOperationName="InputDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="InputDate" isOneWay="false" inputName="" id="ce3f2670-8971-4cc0-a3b4-d66968afa47c" bindingOperationName="InputDate" anonymous="optional" action="http://localhost/test_service/Service1.asmx/InputDate" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ce3f2670-8971-4cc0-a3b4-d66968afa47cfileName">InputDate</con:setting>
   </con:settings>
-  <con:call id="b56756e5-c281-45fa-a9ec-1eb62ca0725d" name="InputDate Request">
+  <con:call name="InputDate Request" id="b56756e5-c281-45fa-a9ec-1eb62ca0725d">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -19,6 +19,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/InputDateRequest"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/InputDateRequest"/>
   </con:call>
 </con:operation>

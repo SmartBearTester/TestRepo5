@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="42739ab8-26f7-4f59-98b2-0e948d177b90" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_complex_class" name="test_complex_class" bindingOperationName="test_complex_class" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_complex_class" isOneWay="false" inputName="" id="42739ab8-26f7-4f59-98b2-0e948d177b90" bindingOperationName="test_complex_class" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_complex_class" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="42739ab8-26f7-4f59-98b2-0e948d177b90fileName">test_complex_class</con:setting>
   </con:settings>
-  <con:call id="80706f2b-c1c6-4009-bc63-15d4a7e139de" name="test_complex_class Request">
+  <con:call name="test_complex_class Request" id="80706f2b-c1c6-4009-bc63-15d4a7e139de">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -25,6 +25,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_complex_classRequest"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_complex_classRequest"/>
   </con:call>
 </con:operation>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="7e4411ce-f9a1-419c-8438-f92ab0827ddb" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_ulong" name="test_ulong" bindingOperationName="test_ulong" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_ulong" isOneWay="false" inputName="" id="7e4411ce-f9a1-419c-8438-f92ab0827ddb" bindingOperationName="test_ulong" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_ulong" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7e4411ce-f9a1-419c-8438-f92ab0827ddbfileName">test_ulong</con:setting>
   </con:settings>
-  <con:call id="6c7996e2-9e59-4fb6-9319-63ec68e0e40a" name="test_ulong Request">
+  <con:call name="test_ulong Request" id="6c7996e2-9e59-4fb6-9319-63ec68e0e40a">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -17,6 +17,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_ulong"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_ulong"/>
   </con:call>
 </con:operation>

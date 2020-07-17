@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="871d2b60-53a2-4ce0-9701-8e1e54495e2e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase timeout="0" searchProperties="true" name="TestCase 1" keepSession="false" id="871d2b60-53a2-4ce0-9701-8e1e54495e2e" failTestCaseOnErrors="true" failOnError="true" discardOkResults="false" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="871d2b60-53a2-4ce0-9701-8e1e54495e2efileName">TestCase-1</con:setting>
   </con:settings>
+  <con:testStep type="groovy" name="Groovy Script" id="09d76023-a60e-43ac-835d-6ac6ba355230">
+    <con:settings/>
+    <con:config>
+      <script>log.info("test");
+log.info("for branch");</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="f1998e1a-b146-408a-a2ef-5c2c2178599f">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>SOAP Request</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" name="SOAP Request" id="6133affd-7193-4fd7-89b0-01235bf0e009">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request wssPasswordType="" useWsReliableMessaging="false" useWsAddressing="false" timeout="" sslKeystore="" outgoingWss="" name="SOAP Request" incomingWss="" id="a551d6d9-debb-4db4-aaad-ea812df4e2bf">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>\r
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header />\r
+   <soapenv:Body>\r
+      <ser:Con_Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>${DataSource#x}</ser:x>\r
+         <!--Optional:-->\r
+         <ser:y>${DataSource#y}</ser:y>\r
+      </ser:Con_Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>\r]]></con:request>
+        <con:assertion type="Schema Compliance" name="Schema Compliance" id="366fe75f-5606-4693-8aa5-cb184aa5b09b">
+          <con:configuration/>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault" id="7e9f4367-be13-4bbb-9aa7-340b55e2ef0e"/>
+        <con:assertion type="Response SLA Assertion" name="Response SLA" id="de0a1f11-e0ee-403f-b2fa-27969b7d8a33">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="fef511e3-4764-43b0-b2a1-3a8cc7ddd10c">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
   <con:testStep type="datasource" name="DataSource" id="48d02e64-e337-4a77-b4f3-45384d364e17">
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -26,69 +87,9 @@
       </con:dataSource>
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
-      <con:property>x</con:property>
       <con:property>y</con:property>
+      <con:property>x</con:property>
       <con:restartOnRun>true</con:restartOnRun>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="request" id="6133affd-7193-4fd7-89b0-01235bf0e009" name="SOAP Request">
-    <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:interface>Test_serviceSoap</con:interface>
-      <con:operation>Con_Stroka</con:operation>
-      <con:request name="SOAP Request" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="a551d6d9-debb-4db4-aaad-ea812df4e2bf">
-        <con:settings/>
-        <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
-        <con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>\r
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
-   <soapenv:Header />\r
-   <soapenv:Body>\r
-      <ser:Con_Stroka>\r
-         <!--Optional:-->\r
-         <ser:x>${DataSource#x}</ser:x>\r
-         <!--Optional:-->\r
-         <ser:y>${DataSource#y}</ser:y>\r
-      </ser:Con_Stroka>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>\r]]></con:request>
-        <con:assertion type="Valid HTTP Status Codes" id="fef511e3-4764-43b0-b2a1-3a8cc7ddd10c" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="de0a1f11-e0ee-403f-b2fa-27969b7d8a33" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="SOAP Fault Assertion" id="7e9f4367-be13-4bbb-9aa7-340b55e2ef0e" name="Not SOAP Fault"/>
-        <con:assertion type="Schema Compliance" id="366fe75f-5606-4693-8aa5-cb184aa5b09b" name="Schema Compliance">
-          <con:configuration/>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
-        <con:wsrmConfig version="1.2"/>
-      </con:request>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasourceloop" name="DataSource Loop" id="f1998e1a-b146-408a-a2ef-5c2c2178599f">
-    <con:settings/>
-    <con:config>
-      <dataSourceStep>DataSource</dataSourceStep>
-      <targetStep>SOAP Request</targetStep>
-      <discardResults>true</discardResults>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="groovy" name="Groovy Script" id="09d76023-a60e-43ac-835d-6ac6ba355230">
-    <con:settings/>
-    <con:config>
-      <script>log.info("test");</script>
     </con:config>
   </con:testStep>
   <con:properties/>

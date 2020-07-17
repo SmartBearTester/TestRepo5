@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="ca644b13-d017-4503-87b3-777961ecc2d8" isOneWay="false" action="http://localhost/test_service/Service1.asmx/TestClassArray_2InputArray" name="TestClassArray_2InputArray" bindingOperationName="TestClassArray_2InputArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="TestClassArray_2InputArray" isOneWay="false" inputName="" id="ca644b13-d017-4503-87b3-777961ecc2d8" bindingOperationName="TestClassArray_2InputArray" anonymous="optional" action="http://localhost/test_service/Service1.asmx/TestClassArray_2InputArray" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ca644b13-d017-4503-87b3-777961ecc2d8fileName">TestClassArray_2InputArray</con:setting>
   </con:settings>
-  <con:call id="46c56330-ae26-4079-a643-d923a9bcb33f" name="TestClassArray_2InputArray Request">
+  <con:call name="TestClassArray_2InputArray Request" id="46c56330-ae26-4079-a643-d923a9bcb33f">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -50,6 +50,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/TestClassArray_2InputArray"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/TestClassArray_2InputArray"/>
   </con:call>
 </con:operation>

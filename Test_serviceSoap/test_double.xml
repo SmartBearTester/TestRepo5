@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="d97fd03a-fef6-4065-9161-c0cf73b473a1" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_double" name="test_double" bindingOperationName="test_double" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_double" isOneWay="false" inputName="" id="d97fd03a-fef6-4065-9161-c0cf73b473a1" bindingOperationName="test_double" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_double" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d97fd03a-fef6-4065-9161-c0cf73b473a1fileName">test_double</con:setting>
   </con:settings>
-  <con:call id="e6dd227a-4654-4ab4-b8a8-2589d8dc73b4" name="test_double Request">
+  <con:call name="test_double Request" id="e6dd227a-4654-4ab4-b8a8-2589d8dc73b4">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -17,6 +17,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_double"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_double"/>
   </con:call>
 </con:operation>

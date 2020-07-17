@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="ccd83c5d-e62c-4212-82b3-04dce77aaa32" isOneWay="false" action="http://localhost/test_service/Service1.asmx/transfer_array" name="transfer_array" bindingOperationName="transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="transfer_array" isOneWay="false" inputName="" id="ccd83c5d-e62c-4212-82b3-04dce77aaa32" bindingOperationName="transfer_array" anonymous="optional" action="http://localhost/test_service/Service1.asmx/transfer_array" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ccd83c5d-e62c-4212-82b3-04dce77aaa32fileName">transfer_array</con:setting>
   </con:settings>
-  <con:call id="46fdbfda-a1b4-4242-899c-2d6a98e260ce" name="transfer_array Request">
+  <con:call name="transfer_array Request" id="46fdbfda-a1b4-4242-899c-2d6a98e260ce">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -23,6 +23,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/transfer_array"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/transfer_array"/>
   </con:call>
 </con:operation>

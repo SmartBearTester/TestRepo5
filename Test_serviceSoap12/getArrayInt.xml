@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="33201e89-6b2a-4b1f-b44e-f38833a9e67e" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayInt" name="getArrayInt" bindingOperationName="getArrayInt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="getArrayInt" isOneWay="false" inputName="" id="33201e89-6b2a-4b1f-b44e-f38833a9e67e" bindingOperationName="getArrayInt" anonymous="optional" action="http://localhost/test_service/Service1.asmx/getArrayInt" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="33201e89-6b2a-4b1f-b44e-f38833a9e67efileName">getArrayInt</con:setting>
   </con:settings>
-  <con:call id="6d36dce7-23d2-41fa-8806-97c7a737f9b4" name="getArrayInt Request">
+  <con:call name="getArrayInt Request" id="6d36dce7-23d2-41fa-8806-97c7a737f9b4">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -23,6 +23,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/getArrayIntRequest"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/getArrayIntRequest"/>
   </con:call>
 </con:operation>

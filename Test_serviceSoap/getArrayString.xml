@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="c096d4ad-2648-4435-9356-3cfae97e5ec7" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayString" name="getArrayString" bindingOperationName="getArrayString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="getArrayString" isOneWay="false" inputName="" id="c096d4ad-2648-4435-9356-3cfae97e5ec7" bindingOperationName="getArrayString" anonymous="optional" action="http://localhost/test_service/Service1.asmx/getArrayString" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c096d4ad-2648-4435-9356-3cfae97e5ec7fileName">getArrayString</con:setting>
   </con:settings>
-  <con:call id="bd74d20b-aa14-44c8-a8c5-cad165405bbf" name="getArrayString Request">
+  <con:call name="getArrayString Request" id="bd74d20b-aa14-44c8-a8c5-cad165405bbf">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -23,6 +23,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/getArrayString"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/getArrayString"/>
   </con:call>
 </con:operation>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="919388ca-c9f3-42c8-bc5d-a0296c26108a" isOneWay="false" action="http://localhost/test_service/Service1.asmx/inheritance_class" name="inheritance_class" bindingOperationName="inheritance_class" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="inheritance_class" isOneWay="false" inputName="" id="919388ca-c9f3-42c8-bc5d-a0296c26108a" bindingOperationName="inheritance_class" anonymous="optional" action="http://localhost/test_service/Service1.asmx/inheritance_class" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="919388ca-c9f3-42c8-bc5d-a0296c26108afileName">inheritance_class</con:setting>
   </con:settings>
-  <con:call id="757dcb9e-fe73-438b-9a2f-39cb75b0e788" name="inheritance_class Request">
+  <con:call name="inheritance_class Request" id="757dcb9e-fe73-438b-9a2f-39cb75b0e788">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -57,6 +57,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/inheritance_class"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/inheritance_class"/>
   </con:call>
 </con:operation>

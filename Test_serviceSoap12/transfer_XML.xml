@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="f67af90f-980e-42ab-99b8-d143bae4abf1" isOneWay="false" action="http://localhost/test_service/Service1.asmx/transfer_XML" name="transfer_XML" bindingOperationName="transfer_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="transfer_XML" isOneWay="false" inputName="" id="f67af90f-980e-42ab-99b8-d143bae4abf1" bindingOperationName="transfer_XML" anonymous="optional" action="http://localhost/test_service/Service1.asmx/transfer_XML" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="f67af90f-980e-42ab-99b8-d143bae4abf1fileName">transfer_XML</con:setting>
   </con:settings>
-  <con:call id="b85a7e7e-b365-4ee7-a576-021a1359b736" name="transfer_XML Request">
+  <con:call name="transfer_XML Request" id="b85a7e7e-b365-4ee7-a576-021a1359b736">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -24,6 +24,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/transfer_XMLRequest"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/transfer_XMLRequest"/>
   </con:call>
 </con:operation>

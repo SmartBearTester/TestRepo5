@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="dfe25746-dc4b-48ea-b4f6-00e4106ba553" isOneWay="false" action="http://localhost/test_service/Service1.asmx/massiv" name="massiv" bindingOperationName="massiv" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="massiv" isOneWay="false" inputName="" id="dfe25746-dc4b-48ea-b4f6-00e4106ba553" bindingOperationName="massiv" anonymous="optional" action="http://localhost/test_service/Service1.asmx/massiv" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="dfe25746-dc4b-48ea-b4f6-00e4106ba553fileName">massiv</con:setting>
   </con:settings>
-  <con:call id="7e219dcc-f7ce-41ab-9cd8-ac3494904ded" name="massiv Request">
+  <con:call name="massiv Request" id="7e219dcc-f7ce-41ab-9cd8-ac3494904ded">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -17,6 +17,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/massivRequest"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/massivRequest"/>
   </con:call>
 </con:operation>

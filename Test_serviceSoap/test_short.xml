@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="58be6a91-12b9-4ef8-8286-eb75f8f3f99c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_short" name="test_short" bindingOperationName="test_short" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_short" isOneWay="false" inputName="" id="58be6a91-12b9-4ef8-8286-eb75f8f3f99c" bindingOperationName="test_short" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_short" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="58be6a91-12b9-4ef8-8286-eb75f8f3f99cfileName">test_short</con:setting>
   </con:settings>
-  <con:call id="700a5e45-7d60-4ebf-8c07-d9a8ebf7426a" name="test_short Request">
+  <con:call name="test_short Request" id="700a5e45-7d60-4ebf-8c07-d9a8ebf7426a">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -17,6 +17,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_short"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_short"/>
   </con:call>
 </con:operation>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="7b07a012-da04-4611-af66-a92bccc21586" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_bool" name="test_bool" bindingOperationName="test_bool" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_bool" isOneWay="false" inputName="" id="7b07a012-da04-4611-af66-a92bccc21586" bindingOperationName="test_bool" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_bool" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7b07a012-da04-4611-af66-a92bccc21586fileName">test_bool</con:setting>
   </con:settings>
-  <con:call id="b0b5146d-c6a9-4adf-b17f-8d78f0c96c5b" name="test_bool Request">
+  <con:call name="test_bool Request" id="b0b5146d-c6a9-4adf-b17f-8d78f0c96c5b">
     <con:settings/>
     <con:encoding>UTF-8</con:encoding>
     <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
@@ -17,6 +17,7 @@
       <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
-    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_boolRequest"/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_boolRequest"/>
   </con:call>
 </con:operation>
