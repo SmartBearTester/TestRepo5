@@ -13,6 +13,8 @@
       <ser:test_double/>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_doubleRequest"/>
   </con:call>
 </con:operation>

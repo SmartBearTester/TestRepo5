@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="0cabf47f-198d-49f9-9763-4ecfc3f58fd7" created="3.3.1-AT" activeEnvironment="Default environment" name="rapi-331-git-checklist" compositeProjectFormat="1.3" updated="3.3.1-AT" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="0cabf47f-198d-49f9-9763-4ecfc3f58fd7" created="3.3.1-AT" activeEnvironment="Default environment" name="rapi-331-git-checklist" compositeProjectFormat="1.3" updated="3.3.1-AT" resourceRoot="" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="0cabf47f-198d-49f9-9763-4ecfc3f58fd7fileName">rapi-331-git-checklist</con:setting>
   </con:settings>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>new-prop</con:name>
+      <con:value>for branch</con:value>
+    </con:property>
+  </con:properties>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
