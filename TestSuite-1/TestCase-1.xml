@@ -3,19 +3,32 @@
   <con:settings>
     <con:setting id="871d2b60-53a2-4ce0-9701-8e1e54495e2efileName">TestCase-1</con:setting>
   </con:settings>
-  <con:testStep type="groovy" name="Groovy Script" id="09d76023-a60e-43ac-835d-6ac6ba355230">
+  <con:testStep type="datasource" name="DataSource" id="48d02e64-e337-4a77-b4f3-45384d364e17">
     <con:settings/>
-    <con:config>
-      <script>log.info("test");
-log.info("for branch");</script>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasourceloop" name="DataSource Loop" id="f1998e1a-b146-408a-a2ef-5c2c2178599f">
-    <con:settings/>
-    <con:config>
-      <dataSourceStep>DataSource</dataSourceStep>
-      <targetStep>SOAP Request</targetStep>
-      <discardResults>true</discardResults>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>2</generatorsTotalNumber>
+          <lastSelectedProperty>-1</lastSelectedProperty>
+          <GeneratorType0>CUSTOM</GeneratorType0>
+          <PropertyName0>x</PropertyName0>
+          <repetitionCountx>0</repetitionCountx>
+          <repeatValuesx>false</repeatValuesx>
+          <CustomStringDataGeneratorFormatx>%STR(5,10,True,True,True,True)</CustomStringDataGeneratorFormatx>
+          <GeneratorType1>CUSTOM</GeneratorType1>
+          <PropertyName1>y</PropertyName1>
+          <repetitionCounty>0</repetitionCounty>
+          <repeatValuesy>false</repeatValuesy>
+          <CustomStringDataGeneratorFormaty>%STR(5,10,True,True,True,True)</CustomStringDataGeneratorFormaty>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>y</con:property>
+      <con:property>x</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
   <con:testStep type="request" name="SOAP Request" id="6133affd-7193-4fd7-89b0-01235bf0e009">
@@ -64,38 +77,35 @@ log.info("for branch");</script>
       </con:request>
     </con:config>
   </con:testStep>
-  <con:testStep type="datasource" name="DataSource" id="48d02e64-e337-4a77-b4f3-45384d364e17">
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="f1998e1a-b146-408a-a2ef-5c2c2178599f">
     <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="Data Generator">
-        <con:configuration>
-          <generatedDataCount>10</generatedDataCount>
-          <generatorsTotalNumber>2</generatorsTotalNumber>
-          <lastSelectedProperty>-1</lastSelectedProperty>
-          <GeneratorType0>CUSTOM</GeneratorType0>
-          <PropertyName0>x</PropertyName0>
-          <repetitionCountx>0</repetitionCountx>
-          <repeatValuesx>false</repeatValuesx>
-          <CustomStringDataGeneratorFormatx>%STR(5,10,True,True,True,True)</CustomStringDataGeneratorFormatx>
-          <GeneratorType1>CUSTOM</GeneratorType1>
-          <PropertyName1>y</PropertyName1>
-          <repetitionCounty>0</repetitionCounty>
-          <repeatValuesy>false</repeatValuesy>
-          <CustomStringDataGeneratorFormaty>%STR(5,10,True,True,True,True)</CustomStringDataGeneratorFormaty>
-          <escapeSpaceSequence/>
-        </con:configuration>
-      </con:dataSource>
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:property>y</con:property>
-      <con:property>x</con:property>
-      <con:restartOnRun>true</con:restartOnRun>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>SOAP Request</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="09d76023-a60e-43ac-835d-6ac6ba355230">
+    <con:settings/>
+    <con:config>
+      <script>log.info("test");
+log.info("for branch");</script>
     </con:config>
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
   <con:breakPoints>
     <con:testStepId>48d02e64-e337-4a77-b4f3-45384d364e17</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>09d76023-a60e-43ac-835d-6ac6ba355230</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>f1998e1a-b146-408a-a2ef-5c2c2178599f</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
