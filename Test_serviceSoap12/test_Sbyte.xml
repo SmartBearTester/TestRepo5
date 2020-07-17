@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_Sbyte" isOneWay="false" inputName="" id="e4f998cf-3875-424d-9ee2-ab71ac78ffa3" bindingOperationName="test_Sbyte" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_Sbyte" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_Sbyte" isOneWay="false" inputName="" id="e4f998cf-3875-424d-9ee2-ab71ac78ffa3" bindingOperationName="test_Sbyte" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_Sbyte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="e4f998cf-3875-424d-9ee2-ab71ac78ffa3fileName">test_Sbyte</con:setting>
   </con:settings>

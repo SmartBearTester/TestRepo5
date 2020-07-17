@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="massiv" isOneWay="false" inputName="" id="dfe25746-dc4b-48ea-b4f6-00e4106ba553" bindingOperationName="massiv" anonymous="optional" action="http://localhost/test_service/Service1.asmx/massiv" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="massiv" isOneWay="false" inputName="" id="dfe25746-dc4b-48ea-b4f6-00e4106ba553" bindingOperationName="massiv" anonymous="optional" action="http://localhost/test_service/Service1.asmx/massiv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="dfe25746-dc4b-48ea-b4f6-00e4106ba553fileName">massiv</con:setting>
   </con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_decimal" isOneWay="false" inputName="" id="7ab85fc0-5b1f-4519-8da2-5c08575c79fd" bindingOperationName="test_decimal" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_decimal" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_decimal" isOneWay="false" inputName="" id="7ab85fc0-5b1f-4519-8da2-5c08575c79fd" bindingOperationName="test_decimal" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_decimal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7ab85fc0-5b1f-4519-8da2-5c08575c79fdfileName">test_decimal</con:setting>
   </con:settings>

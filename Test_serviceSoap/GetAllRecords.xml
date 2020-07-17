@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="GetAllRecords" isOneWay="false" inputName="" id="8afd3feb-3ee5-4d82-9c6f-a0839782d29e" bindingOperationName="GetAllRecords" anonymous="optional" action="http://localhost/test_service/Service1.asmx/GetAllRecords" xmlns:con="http://eviware.com/soapui/config">
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="GetAllRecords" isOneWay="false" inputName="" id="8afd3feb-3ee5-4d82-9c6f-a0839782d29e" bindingOperationName="GetAllRecords" anonymous="optional" action="http://localhost/test_service/Service1.asmx/GetAllRecords" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="8afd3feb-3ee5-4d82-9c6f-a0839782d29efileName">GetAllRecords</con:setting>
   </con:settings>
