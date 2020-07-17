@@ -89,7 +89,7 @@
     <con:settings/>
     <con:config>
       <script>log.info("test");
-log.info("for branch");</script>
+log.info("for master");</script>
     </con:config>
   </con:testStep>
   <con:properties/>
