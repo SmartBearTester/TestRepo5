@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ccd83c5d-e62c-4212-82b3-04dce77aaa32" isOneWay="false" action="http://localhost/test_service/Service1.asmx/transfer_array" name="transfer_array" bindingOperationName="transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ccd83c5d-e62c-4212-82b3-04dce77aaa32fileName">transfer_array</con:setting>
+  </con:settings>
+  <con:call id="46fdbfda-a1b4-4242-899c-2d6a98e260ce" name="transfer_array Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:transfer_array>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:x>\r
+      </ser:transfer_array>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/transfer_array"/>
+  </con:call>
+</con:operation>

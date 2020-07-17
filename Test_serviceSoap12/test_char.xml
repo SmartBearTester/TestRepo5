@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="19593e12-8ac0-4a51-86cc-8324be3ce17f" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_char" name="test_char" bindingOperationName="test_char" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="19593e12-8ac0-4a51-86cc-8324be3ce17ffileName">test_char</con:setting>
+  </con:settings>
+  <con:call id="9e292cde-ff94-402d-a576-c741fe29478b" name="test_char Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_char/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_charRequest"/>
+  </con:call>
+</con:operation>

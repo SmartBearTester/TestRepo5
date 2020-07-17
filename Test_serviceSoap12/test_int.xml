@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8c8945f9-110e-4af0-9bc6-e2ae92677305" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_int" name="test_int" bindingOperationName="test_int" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8c8945f9-110e-4af0-9bc6-e2ae92677305fileName">test_int</con:setting>
+  </con:settings>
+  <con:call id="8f79e0f7-b723-4a57-ac88-2f673c478a6f" name="test_int Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_int/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_intRequest"/>
+  </con:call>
+</con:operation>

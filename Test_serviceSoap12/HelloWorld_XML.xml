@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5850ca42-dc17-47f2-ae08-e12a5ac037ba" isOneWay="false" action="http://localhost/test_service/Service1.asmx/HelloWorld_XML" name="HelloWorld_XML" bindingOperationName="HelloWorld_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5850ca42-dc17-47f2-ae08-e12a5ac037bafileName">HelloWorld_XML</con:setting>
+  </con:settings>
+  <con:call id="d837ae1d-aa1b-49f9-b81d-5a9cd9a56bd8" name="HelloWorld_XML Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:HelloWorld_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/HelloWorld_XMLRequest"/>
+  </con:call>
+</con:operation>

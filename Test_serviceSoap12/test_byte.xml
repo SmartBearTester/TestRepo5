@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="2f10e941-2ca6-4c2b-b910-22a0834e2433" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_byte" name="test_byte" bindingOperationName="test_byte" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2f10e941-2ca6-4c2b-b910-22a0834e2433fileName">test_byte</con:setting>
+  </con:settings>
+  <con:call id="3ca765e3-ca26-479c-b251-9f42283e4b46" name="test_byte Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_byte/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_byteRequest"/>
+  </con:call>
+</con:operation>

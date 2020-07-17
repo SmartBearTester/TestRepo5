@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="42a9ab18-b32a-4f7c-8749-d16c7cef8cda" isOneWay="false" action="http://localhost/test_service/Service1.asmx/InputDate" name="InputDate" bindingOperationName="InputDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="42a9ab18-b32a-4f7c-8749-d16c7cef8cdafileName">InputDate</con:setting>
+  </con:settings>
+  <con:call id="656fd7a8-30f7-4cdb-82b2-d7afb4f28b1b" name="InputDate Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:InputDate>\r
+         <ser:MyInputDate>?</ser:MyInputDate>\r
+      </ser:InputDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/InputDate"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="281288ea-e51c-4c2e-9e59-1f55d0162f3a" isOneWay="false" action="http://localhost/test_service/Service1.asmx/file_XML" name="file_XML" bindingOperationName="file_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="281288ea-e51c-4c2e-9e59-1f55d0162f3afileName">file_XML</con:setting>
+  </con:settings>
+  <con:call id="fe0313b0-e71a-404b-aef0-9cde6a8310af" name="file_XML Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:file_XML/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/file_XML"/>
+  </con:call>
+</con:operation>

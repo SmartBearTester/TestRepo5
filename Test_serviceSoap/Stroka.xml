@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4fd791a4-386b-45e3-b0f2-2d99dbc2edac" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Stroka" name="Stroka" bindingOperationName="Stroka" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4fd791a4-386b-45e3-b0f2-2d99dbc2edacfileName">Stroka</con:setting>
+  </con:settings>
+  <con:call id="39ed57b1-59e7-433e-96b6-36b8f96e7920" name="Stroka Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>?</ser:x>\r
+      </ser:Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Stroka"/>
+  </con:call>
+</con:operation>

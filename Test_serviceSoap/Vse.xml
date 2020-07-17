@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="084a862f-5ecd-4337-b4ef-40e5bd9c1aba" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Vse" name="Vse" bindingOperationName="Vse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="084a862f-5ecd-4337-b4ef-40e5bd9c1abafileName">Vse</con:setting>
+  </con:settings>
+  <con:call id="06e13093-6a52-4f19-a54f-31a6ed27aa67" name="Vse Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Vse>\r
+         <ser:x>?</ser:x>\r
+         <ser:y>?</ser:y>\r
+         <!--Optional:-->\r
+         <ser:z>?</ser:z>\r
+      </ser:Vse>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Vse"/>
+  </con:call>
+</con:operation>
