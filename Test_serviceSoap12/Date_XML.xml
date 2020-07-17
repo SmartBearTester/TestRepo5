@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="4cded53b-a7bb-430f-bc09-1fc4cc20cd0c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Date_XML" name="Date_XML" bindingOperationName="Date_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="4cded53b-a7bb-430f-bc09-1fc4cc20cd0c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Date_XML" name="Date_XML" bindingOperationName="Date_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="4cded53b-a7bb-430f-bc09-1fc4cc20cd0cfileName">Date_XML</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:Date_XML/>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/Date_XMLRequest"/>
   </con:call>
 </con:operation>

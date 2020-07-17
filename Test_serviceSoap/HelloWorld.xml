@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="63a8c2b3-658c-4e31-a204-5baf8c86380f" isOneWay="false" action="http://localhost/test_service/Service1.asmx/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="63a8c2b3-658c-4e31-a204-5baf8c86380f" isOneWay="false" action="http://localhost/test_service/Service1.asmx/HelloWorld" name="HelloWorld" bindingOperationName="HelloWorld" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="63a8c2b3-658c-4e31-a204-5baf8c86380ffileName">HelloWorld</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:HelloWorld/>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/HelloWorld"/>
   </con:call>
 </con:operation>

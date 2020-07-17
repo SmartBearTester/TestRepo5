@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="ac08d1b0-6d82-43a8-b305-f4700d050ba5" isOneWay="false" action="http://localhost/test_service/Service1.asmx/object_in_object" name="object_in_object" bindingOperationName="object_in_object" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="ac08d1b0-6d82-43a8-b305-f4700d050ba5" isOneWay="false" action="http://localhost/test_service/Service1.asmx/object_in_object" name="object_in_object" bindingOperationName="object_in_object" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ac08d1b0-6d82-43a8-b305-f4700d050ba5fileName">object_in_object</con:setting>
   </con:settings>
@@ -13,6 +13,10 @@
       <ser:object_in_object/>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/object_in_object"/>
   </con:call>
 </con:operation>

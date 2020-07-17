@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="c10c54e5-9dbc-402e-9962-e0cc0ed7dc87" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_complex_class" name="test_complex_class" bindingOperationName="test_complex_class" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="c10c54e5-9dbc-402e-9962-e0cc0ed7dc87" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_complex_class" name="test_complex_class" bindingOperationName="test_complex_class" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c10c54e5-9dbc-402e-9962-e0cc0ed7dc87fileName">test_complex_class</con:setting>
   </con:settings>
@@ -21,6 +21,10 @@
       </ser:test_complex_class>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_complex_class"/>
   </con:call>
 </con:operation>

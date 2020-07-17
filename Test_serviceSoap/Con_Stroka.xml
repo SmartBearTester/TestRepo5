@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="2c711b0f-1799-4a8a-9ee6-6fd0e6cd17b5" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Con_Stroka" name="Con_Stroka" bindingOperationName="Con_Stroka" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="2c711b0f-1799-4a8a-9ee6-6fd0e6cd17b5" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Con_Stroka" name="Con_Stroka" bindingOperationName="Con_Stroka" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="2c711b0f-1799-4a8a-9ee6-6fd0e6cd17b5fileName">Con_Stroka</con:setting>
   </con:settings>
@@ -19,6 +19,7 @@
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
     <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
       <con:authType>No Authorization</con:authType>
     </con:credentials>
     <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
