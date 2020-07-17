@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="33201e89-6b2a-4b1f-b44e-f38833a9e67e" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayInt" name="getArrayInt" bindingOperationName="getArrayInt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="33201e89-6b2a-4b1f-b44e-f38833a9e67e" isOneWay="false" action="http://localhost/test_service/Service1.asmx/getArrayInt" name="getArrayInt" bindingOperationName="getArrayInt" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="33201e89-6b2a-4b1f-b44e-f38833a9e67efileName">getArrayInt</con:setting>
   </con:settings>
@@ -19,7 +19,10 @@
       </ser:getArrayInt>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
-    <con:credentials/>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/getArrayIntRequest"/>
   </con:call>

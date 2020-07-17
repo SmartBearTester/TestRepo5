@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="ce3f2670-8971-4cc0-a3b4-d66968afa47c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/InputDate" name="InputDate" bindingOperationName="InputDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+<con:operation id="ce3f2670-8971-4cc0-a3b4-d66968afa47c" isOneWay="false" action="http://localhost/test_service/Service1.asmx/InputDate" name="InputDate" bindingOperationName="InputDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ce3f2670-8971-4cc0-a3b4-d66968afa47cfileName">InputDate</con:setting>
   </con:settings>
@@ -15,7 +15,10 @@
       </ser:InputDate>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
-    <con:credentials/>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
     <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/InputDateRequest"/>
   </con:call>
