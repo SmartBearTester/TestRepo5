@@ -88,7 +88,8 @@
   <con:testStep type="groovy" name="Groovy Script" id="09d76023-a60e-43ac-835d-6ac6ba355230">
     <con:settings/>
     <con:config>
-      <script>log.info("test");</script>
+      <script>log.info("test");
+log.info("for branch");</script>
     </con:config>
   </con:testStep>
   <con:properties/>

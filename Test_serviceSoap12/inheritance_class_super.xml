@@ -55,6 +55,8 @@
       </ser:inheritance_class_super>\r
    </soap:Body>\r
 </soap:Envelope>]]></con:request>
+    <con:credentials/>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
     <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/inheritance_class_superRequest"/>
   </con:call>
 </con:operation>
